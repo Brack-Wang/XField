@@ -77,7 +77,7 @@
                   <style>
                     .publication-authors .author-block {
                         display: inline-block;
-                        margin-right: 20px; /* Adjust spacing as needed */
+                        margin-right: 15px; /* Adjust spacing as needed */
                     }
                 </style>
 
@@ -143,15 +143,20 @@
   </div>
 </section>
 
+video {
+  width: 100%; 
+  height: auto;
+  object-fit: cover; /* Crop the video to fill the container without black bars */
+}
+
+
 
 <!-- Teaser video-->
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
-      <video poster="" id="tree" autoplay controls muted loop height="100%">
-        <!-- Your video here -->
-        <source src="static/videos/video.mp4"
-        type="video/mp4">
+      <video poster="" id="tree" autoplay controls muted loop>
+        <source src="static/videos/video.mp4" type="video/mp4">
       </video>
       <h2 class="subtitle has-text-centered">
         <b>X-Field:</b> Training with sparse inputs, rendering in 360 degrees.<br> 
@@ -160,7 +165,7 @@
     </div>
   </div>
 </section>
-<!-- End teaser video -->
+
 
 <!-- Paper abstract -->
 <section class="section hero is-light">
@@ -192,7 +197,7 @@
       <div id="results-carousel" class="carousel results-carousel">
         <!-- First Slide -->
         <div class="item">
-          <img src="static/images/teaser.png" alt="Comparison of Imaging Processes"/>
+          <img src="static/images/newteaser.png" alt="Comparison of Imaging Processes" style="max-width: 70%; height: auto; display: block; margin: 0 auto;"/>
           <h2 class="subtitle has-text-centered">
             <b>Comparison of Imaging Processes and Corresponding 3D Representations.</b> 
             (a) Visible light interacts with surfaces mainly through scattering and reflection. NeRF and 3DGS model this by accumulating directional light rays. (b) Rooted in X-rays' attenuation and penetration properties, our X-Field models the radiological density of different materials to reveal internal structure.
@@ -201,7 +206,7 @@
 
         <!-- Second Slide -->
         <div class="item">
-          <img src="static/images/pipeline.png" alt="Overview of X-Field"/>
+          <img src="static/images/pipeline.png" alt="Overview of X-Field" style="max-width: 70%; height: auto; display: block; margin: 0 auto;"/>
           <h2 class="subtitle has-text-centered">
             <b>Overview of X-Field.</b> 
             <span style="color: #F1708E;">(a) Hybrid Progressive Initialization.</span> We begin with X-ray images to construct a coarse initialization using combined iterative methods.  
@@ -213,7 +218,6 @@
     </div>
   </div>
 </section>
-
 <!-- End image carousel -->
 
 
