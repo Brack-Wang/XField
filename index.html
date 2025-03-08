@@ -133,7 +133,7 @@
         type="video/mp4">
       </video>
       <h2 class="subtitle has-text-centered">
-        Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
+        Our X-Field representation shows for X-ray Novel View Synthesis with smooth and detailed textures.
       </h2>
     </div>
   </div>
@@ -148,7 +148,12 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tellus sed ante aliquam tempus. Etiam porttitor urna feugiat nibh elementum, et tempor dolor mattis. Donec accumsan enim augue, a vulputate nisi sodales sit amet. Proin bibendum ex eget mauris cursus euismod nec et nibh. Maecenas ac gravida ante, nec cursus dui. Vivamus purus nibh, placerat ac purus eget, sagittis vestibulum metus. Sed vestibulum bibendum lectus gravida commodo. Pellentesque auctor leo vitae sagittis suscipit.
+            X-ray imaging is indispensable in medical diagnostics, yet its use is tightly regulated due to potential health risks. To mitigate radiation exposure, recent research focuses on generating novel views from sparse inputs and reconstructing Computed Tomography (CT) volumes, borrowing representations from the 3D reconstruction area.
+            However, these representations originally target visible light imaging that emphasizes reflection and scattering effects, while neglecting penetration and attenuation properties of X-ray imaging.
+            In this paper, we introduce X-Field, the first 3D representation specifically designed for X-ray imaging, rooted in the energy absorption rates across different materials. 
+            To accurately model diverse materials within internal structures, we employ 3D ellipsoids with distinct attenuation coefficients. To estimate each material's energy absorption of X-rays, we devise an efficient path partitioning algorithm accounting for complex ellipsoid intersections.
+            We further propose hybrid progressive initialization to refine the geometric accuracy of X-Filed and incorporate material-based optimization to enhance model fitting along material boundaries.
+            Experiments show that X-Field achieves superior visual fidelity on both real-world human organ and synthetic object datasets, outperforming state-of-the-art methods in X-ray Novel View Synthesis and CT Reconstruction.
           </p>
         </div>
       </div>
